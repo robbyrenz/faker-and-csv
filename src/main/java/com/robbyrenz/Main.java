@@ -54,8 +54,8 @@ public class Main {
 
     private static String getNameOfPet(Either<Dog, Cat> pet) {
         if (pet.isLeft()) {
-            return pet.getLeft().name();
+            return pet.getLeft().breed();
         }
-        return pet.get().name();
+        return pet.get().breed();
     }
 }
